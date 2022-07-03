@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Component } from 'react'
-//import Module from './components/Module'
+import Decisions from './components/Decisions.js'
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class App extends Component {
       stateObject: "Object"
     }
   }
-  
+
   // Function Declare area..
   // function = () => { ... }
 
@@ -19,6 +19,7 @@ class App extends Component {
           {/*// User input box*/}
           <div>
             <h1><strong>Decision Making App</strong></h1>
+            <Decisions />
           </div>
           {/*<Module stateObject={this.state.stateObject}/>*/}
       </div>
