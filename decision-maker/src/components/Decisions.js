@@ -95,11 +95,13 @@ class Decisions extends Component {
         "Folk Art Restaurant"
       ],
       mediterranean: [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Aviva by Kameel",
+        "Ameer’s Mediterranean Grill",
+        "Baraka Shawarma",
+        "Delbar Middle Eastern",
+        "Sufi’s",
+        "Nick’s Food To Go",
+        "Yalla"
       ]
     }
   }
