@@ -66,11 +66,14 @@ class Decisions extends Component {
         "Aamar Indian Cuisine"
       ],
       brewery: [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "SweetWater Brewing Company",
+        "New Realm Brewing",
+        "Hopstix",
+        "Bold Monk",
+        "The Porter Beer Bar",
+        "Wrecking Bar Brewpub",
+        "Torched Hop Brewing",
+        "Monday Night Brewing"
       ],
       italian: [
         "Amalfi Cucina & Mercato",
@@ -81,14 +84,15 @@ class Decisions extends Component {
         "Mezza Luna",
         "Argosy",
         "Ammazza",
-        "Fellini’s Pizza"
+        "Fellini’s Pizza",
+        "Antico Pizza"
       ],
       american: [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Atlanta Breakfast Club",
+        "Sun in My Belly",
+        "Leon’s Full Service",
+        "Argosy",
+        "Folk Art Restaurant"
       ],
       mediterranean: [
         "",
@@ -102,7 +106,13 @@ class Decisions extends Component {
 
   // Functions...
   handleClick = () => {
-    alert(this.state.choices[2])
+    var randomChoice = (Math.floor(Math.random() * this.state.choices.length))
+    alert(randomChoice)
+    //var randomRestaurant = (Math.floor(Math.random() * this.state.quote.length))
+
+
+      
+    
   }
 
   render() {
