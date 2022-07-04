@@ -126,35 +126,35 @@ class Decisions extends Component {
     var links = [
       // Mexican
       [
-        "https://www.yelp.com/biz/la-pastorcita-atlanta",
-        "https://www.eltesoroatl.com/",
-        "https://www.nuevolaredocantina.com/",
-        "https://www.tinlizzyscantina.com/",
-        "https://ttatl.com/",
-        "https://elreydeltacoatl.com/"
+        <a href="https://www.yelp.com/biz/la-pastorcita-atlanta">Visit Website</a>,
+        <a href="https://www.eltesoroatl.com/">Visit Website</a>,
+        <a href="https://www.nuevolaredocantina.com/">Visit Website</a>,
+        <a href="https://www.tinlizzyscantina.com/">Visit Website</a>,
+        <a href="https://ttatl.com/">Visit Website</a>,
+        <a href="https://elreydeltacoatl.com/">Visit Website</a>
       ],
       // Chinese
       [
-        "https://www.lameiziatl.com/",
-        "https://www.bigbosschinese.com/",
-        "https://urbanwuga.com/",
-        "https://grandchinaatl.com/",
-        "https://chongqinghotpotga.com/"
+        <a href="https://www.lameiziatl.com/">Visit Website</a>,
+        <a href="https://www.bigbosschinese.com/">Visit Website</a>,
+        <a href="https://urbanwuga.com/">Visit Website</a>,
+        <a href="https://grandchinaatl.com/">Visit Website</a>,
+        <a href="https://chongqinghotpotga.com/">Visit Website</a>
       ],
       // Vietmanese
       [
-        "Nam Phuong",
-        "Pho Dai Loi 2",
-        "Lady Ha",
-        "Poor Calvin's",
-        "Lee's Bakery",
-        "Quồc Hương Bánh Mì Fast Food",
-        "Pho 24",
-        "Le Fat"
+        <a href="https://www.atlantaeats.com/restaurants/nam-phuong/">Visit Website</a>,
+        <a href="https://www.yelp.com/biz/pho-dai-loi-2-atlanta">Visit Website</a>,
+        <a href="https://www.ladyha.com/">Visit Website</a>,
+        <a href="https://poorcalvins.com/">Visit Website</a>,
+        <a href="https://leesbakeryatl.com/">Visit Website</a>,
+        <a href="https://banhmiquochuong.com/">Visit Website</a>,
+        <a href="https://pho24decatur.com/order-online/">Visit Website</a>,
+        <a href="https://www.lefatatl.com/">Visit Website</a>
       ],
       // Thai
       [
-        "26 Thai Kitchen and Bar",
+        "https://26thai.com/",
         "SriThai Thai Kitchen & Sushi Bar -Emory",
         "Little Bangkok",
         "Bangkok Station",
@@ -240,7 +240,7 @@ class Decisions extends Component {
         <div id="display-output">
           <div className="selection genre">{this.state.selectedType}</div>
           <div className="selection">{this.state.selectedPlace}</div>
-          <div className="selection"><a href={this.state.url}>Visit Website</a></div>
+          <div className="selection">{this.state.url}</div>
         </div>
 
       </div>
