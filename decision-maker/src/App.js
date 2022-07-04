@@ -6,22 +6,33 @@ class App extends Component {
   constructor(props) {
     super(props) 
     this.state = {
-      stateObject: "Object"
+      decisions: [],
+      index: ""
     }
   }
 
-  // Function Declare area..
-  // function = () => { ... }
+  handleClick = (button) => {
+    if(button == "choice") {
+      var  choice = <Decisions key={this.state.index}/>
+      this.setState({ decisions: [...this.state.decisions, choice], index: this.state.index + 1 })
+    } else if ( button == "reset") {
+      this.setState({decisions: this.state.decisions = []})
+      this.setState({ index: this.state.index = ""})
+    }
+  }
 
   render(){
     return(
       <div className="App">
-          {/*// User input box*/}
           <div>
-            <h1><strong>Decision Making App</strong></h1>
-            <Decisions />
+            <h3><strong>Decision Making App</strong></h3>
+            <button onClick={() => { this.handleClick("choice") }}>Press to Add Choice</button>
+
+            {this.state.decisions}
+
+            <button onClick={() => { this.handleClick("reset") }}>Reset</button>
+
           </div>
-          {/*<Module stateObject={this.state.stateObject}/>*/}
       </div>
     )
   }

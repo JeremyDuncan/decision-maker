@@ -132,11 +132,10 @@ class Decisions extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Decisions Component</h2>
+      <div id="decision-wrapper">
         <button onClick={() => { this.handleClick() }}>Press for Selection</button>
-        <h2>{this.state.selectedType}</h2>
-        <h2>{this.state.selectedPlace}</h2>
+        <div className="selection genre">{this.state.selectedType}</div>
+        <div className="selection">{this.state.selectedPlace}</div>
 
       </div>
     )
