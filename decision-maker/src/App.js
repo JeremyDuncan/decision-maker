@@ -26,11 +26,13 @@ class App extends Component {
       <div className="App">
           <div>
             <h3><strong>Decision Making App</strong></h3>
-            <button onClick={() => { this.handleClick("choice") }}>Press to Add Choice</button>
-
+            <div className="but">
+              <button onClick={() => { this.handleClick("choice") }}>Press to Add Choice</button>
+              <button onClick={() => { this.handleClick("reset") }}>Reset</button>
+            </div>
             {this.state.decisions}
 
-            <button onClick={() => { this.handleClick("reset") }}>Reset</button>
+            
 
           </div>
       </div>
