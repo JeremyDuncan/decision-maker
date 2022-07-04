@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/decision-maker/static/css/main.689c2853.css",
-    "main.js": "/decision-maker/static/js/main.3905b8fc.js",
+    "main.css": "/decision-maker/static/css/main.79f23aa6.css",
+    "main.js": "/decision-maker/static/js/main.6d78c94b.js",
     "static/js/787.a041b1c0.chunk.js": "/decision-maker/static/js/787.a041b1c0.chunk.js",
     "index.html": "/decision-maker/index.html",
-    "main.689c2853.css.map": "/decision-maker/static/css/main.689c2853.css.map",
-    "main.3905b8fc.js.map": "/decision-maker/static/js/main.3905b8fc.js.map",
+    "main.79f23aa6.css.map": "/decision-maker/static/css/main.79f23aa6.css.map",
+    "main.6d78c94b.js.map": "/decision-maker/static/js/main.6d78c94b.js.map",
     "787.a041b1c0.chunk.js.map": "/decision-maker/static/js/787.a041b1c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.689c2853.css",
-    "static/js/main.3905b8fc.js"
+    "static/css/main.79f23aa6.css",
+    "static/js/main.6d78c94b.js"
   ]
 }
