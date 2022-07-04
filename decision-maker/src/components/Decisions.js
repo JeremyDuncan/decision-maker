@@ -8,9 +8,6 @@ class Decisions extends Component {
     }
   }
 
-  
-
-  // Functions...
   handleClick = () => {
     var choices = [
       "Mexican 🌮",
@@ -124,7 +121,6 @@ class Decisions extends Component {
         "Nick’s Food To Go",
         "Yalla"
       ]
-
     ]
 
     var randomChoice = (Math.floor(Math.random() * choices.length))
@@ -138,7 +134,7 @@ class Decisions extends Component {
     return (
       <div>
         <h2>Decisions Component</h2>
-        <button onClick={() => { this.handleClick() }}>Press Generate Random Selection</button>
+        <button onClick={() => { this.handleClick() }}>Press for Selection</button>
         <h2>{this.state.selectedType}</h2>
         <h2>{this.state.selectedPlace}</h2>
 
