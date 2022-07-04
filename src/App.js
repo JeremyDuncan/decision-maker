@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react'
 import Decisions from './components/Decisions.js'
+import Footer from './components/Footer.js'
 
 class App extends Component {
   constructor(props) {
@@ -32,8 +33,7 @@ class App extends Component {
             </div>
             {this.state.decisions}
 
-            
-
+            <Footer />
           </div>
       </div>
     )
