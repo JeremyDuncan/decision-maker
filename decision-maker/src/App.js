@@ -12,12 +12,12 @@ class App extends Component {
   }
 
   handleClick = (button) => {
-    if(button == "choice") {
+    if(button === "choice") {
       var  choice = <Decisions key={this.state.index}/>
       this.setState({ decisions: [...this.state.decisions, choice], index: this.state.index + 1 })
-    } else if ( button == "reset") {
-      this.setState({decisions: this.state.decisions = []})
-      this.setState({ index: this.state.index = ""})
+    } else if ( button === "reset") {
+      this.setState({decisions: []})
+      this.setState({ index: ""})
     }
   }
 

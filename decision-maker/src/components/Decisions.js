@@ -227,9 +227,9 @@ class Decisions extends Component {
     var randomChoice = (Math.floor(Math.random() * choices.length))
     var index = (Math.floor(Math.random() * places[randomChoice].length))
   
-    this.setState({selectedType: this.state.selectedType = choices[randomChoice]})
-    this.setState({selectedPlace: this.state.selectedType = places[randomChoice][index]})
-    this.setState({url: this.state.url = links[randomChoice][index]})    
+    this.setState({selectedType: choices[randomChoice]});
+    this.setState({selectedPlace: places[randomChoice][index]});
+    this.setState({url: links[randomChoice][index]});    
   }
 
   render() {
