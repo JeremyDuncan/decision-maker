@@ -3,19 +3,31 @@ class Decisions extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      choices: [
-        "Mexican",
-        "Chinese",
-        "Vietmanese",
-        "Thai",
-        "Japanese",
-        "Indian",
-        "Brewery",
-        "Italian",
-        "American",
-        "Mediterranean"
-      ],
-      mexican: [
+      selectedType: "",
+      selectedPlace: ""
+    }
+  }
+
+  
+
+  // Functions...
+  handleClick = () => {
+    var choices = [
+      "Mexican 🌮",
+      "Chinese 🥡",
+      "Vietmanese 🍜",
+      "Thai 🍛",
+      "Japanese 🍱",
+      "Indian 🥘",
+      "Brewery 🍻",
+      "Italian 🍕",
+      "American 🍔",
+      "Mediterranean 🥙"
+    ]
+
+    var places = [
+      // Mexican
+      [
         "La Pastorcita",
         "El Tesoro",
         "Nuevo Laredo Cantina",
@@ -23,14 +35,16 @@ class Decisions extends Component {
         "Tacos and Tequilas Mexican Grill",
         "El Rey Del Taco"
       ],
-      chinese: [
+      // Chinese
+      [
         "La Mei Zi",
         "Big Boss",
         "Urban Wu",
         "Grand China Restaurant",
         "Chong Qing Hot Pot"
       ],
-      vietmanese: [
+      // Vietmanese
+      [
         "Nam Phuong",
         "Pho Dai Loi 2",
         "Lady Ha",
@@ -40,14 +54,16 @@ class Decisions extends Component {
         "Pho 24",
         "Le Fat"
       ],
-      thai: [
+      // Thai
+      [
         "26 Thai Kitchen and Bar",
         "SriThai Thai Kitchen & Sushi Bar -Emory",
         "Little Bangkok",
         "Bangkok Station",
         "Tuk Tuk Thai Food Loft"
       ],
-      japanese: [
+      // Japanese
+      [
         "JINYA Ramen Bar",
         "Eight Sushi Lounge",
         "Shoya Izakaya",
@@ -55,7 +71,8 @@ class Decisions extends Component {
         "Umi",
         "Wagaya"
       ],
-      indian: [
+      // Indian
+      [
         "Desie Spice",
         "Chai Pani",
         "Purnima Bangladeshi Cuisine",
@@ -65,7 +82,8 @@ class Decisions extends Component {
         "Tabla",
         "Aamar Indian Cuisine"
       ],
-      brewery: [
+      // Brewery
+      [
         "SweetWater Brewing Company",
         "New Realm Brewing",
         "Hopstix",
@@ -75,7 +93,8 @@ class Decisions extends Component {
         "Torched Hop Brewing",
         "Monday Night Brewing"
       ],
-      italian: [
+      // Italian
+      [
         "Amalfi Cucina & Mercato",
         "Pasta Da Pulcinella",
         "No. 246",
@@ -87,14 +106,16 @@ class Decisions extends Component {
         "Fellini’s Pizza",
         "Antico Pizza"
       ],
-      american: [
+      // American
+      [
         "Atlanta Breakfast Club",
         "Sun in My Belly",
         "Leon’s Full Service",
         "Argosy",
         "Folk Art Restaurant"
       ],
-      mediterranean: [
+      // Mediterranean
+      [
         "Aviva by Kameel",
         "Ameer’s Mediterranean Grill",
         "Baraka Shawarma",
@@ -103,18 +124,14 @@ class Decisions extends Component {
         "Nick’s Food To Go",
         "Yalla"
       ]
-    }
-  }
 
-  // Functions...
-  handleClick = () => {
-    var randomChoice = (Math.floor(Math.random() * this.state.choices.length))
-    alert(randomChoice)
-    //var randomRestaurant = (Math.floor(Math.random() * this.state.quote.length))
+    ]
 
+    var randomChoice = (Math.floor(Math.random() * choices.length))
+    var index = (Math.floor(Math.random() * places[randomChoice].length))
 
-      
-    
+    this.setState({selectedType: this.state.selectedType = choices[randomChoice]})
+    this.setState({selectedPlace: this.state.selectedType = places[randomChoice][index]})    
   }
 
   render() {
@@ -122,6 +139,8 @@ class Decisions extends Component {
       <div>
         <h2>Decisions Component</h2>
         <button onClick={() => { this.handleClick() }}>Press Generate Random Selection</button>
+        <h2>{this.state.selectedType}</h2>
+        <h2>{this.state.selectedPlace}</h2>
 
       </div>
     )
