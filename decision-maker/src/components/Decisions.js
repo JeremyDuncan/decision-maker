@@ -4,37 +4,109 @@ class Decisions extends Component {
     super(props)
     this.state = {
       choices: [
-        "Mexican", 
-        "Chinese", 
-        "Vietmanese", 
-        "Thai", 
-        "Japanese", 
-        "Indian", 
-        "Brewery", 
-        "Italian", 
-        "American", 
+        "Mexican",
+        "Chinese",
+        "Vietmanese",
+        "Thai",
+        "Japanese",
+        "Indian",
+        "Brewery",
+        "Italian",
+        "American",
         "Mediterranean"
       ],
-      mexican: [],
-      chinese: [],
-      vietmanese: [],
-      thai: [],
-      japanese: [],
-      indian: [],
-      brewery: [],
-      italian: [],
-      american: [],
-      mediterranean: []
+      mexican: [
+        "La Pastorcita",
+        "El Tesoro",
+        "Nuevo Laredo Cantina",
+        "Tin Lizzy's Cantina",
+        "Tacos and Tequilas Mexican Grill",
+        "El Rey Del Taco"
+      ],
+      chinese: [
+        "La Mei Zi",
+        "Big Boss",
+        "Urban Wu",
+        "Grand China Restaurant",
+        "Chong Qing Hot Pot"
+      ],
+      vietmanese: [
+        "Nam Phuong",
+        "Pho Dai Loi 2",
+        "Lady Ha",
+        "Poor Calvin's",
+        "Lee's Bakery",
+        "Quồc Hương Bánh Mì Fast Food",
+        "Pho 24",
+        "Le Fat"
+      ],
+      thai: [
+        "26 Thai Kitchen and Bar",
+        "SriThai Thai Kitchen & Sushi Bar -Emory",
+        "Little Bangkok",
+        "Bangkok Station",
+        "Tuk Tuk Thai Food Loft"
+      ],
+      japanese: [
+        "JINYA Ramen Bar",
+        "Eight Sushi Lounge",
+        "Shoya Izakaya",
+        "Nakato Japanese Restaurant",
+        "Umi",
+        "Wagaya"
+      ],
+      indian: [
+        "Desie Spice",
+        "Chai Pani",
+        "Purnima Bangladeshi Cuisine",
+        "Zyka",
+        "Cafe Bombay",
+        "Masti fun Indian Street Food",
+        "Tabla",
+        "Aamar Indian Cuisine"
+      ],
+      brewery: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      italian: [
+        "Amalfi Cucina & Mercato",
+        "Pasta Da Pulcinella",
+        "No. 246",
+        "Sotto Sotto",
+        "BoccaLupo",
+        "Mezza Luna",
+        "Argosy",
+        "Ammazza",
+        "Fellini’s Pizza"
+      ],
+      american: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      mediterranean: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   }
 
   // Functions...
-   handleClick = () => { 
-   alert(this.state.choices[2])
-  } 
-  
+  handleClick = () => {
+    alert(this.state.choices[2])
+  }
+
   render() {
-    return(
+    return (
       <div>
         <h2>Decisions Component</h2>
         <button onClick={() => { this.handleClick() }}>Press Generate Random Selection</button>
